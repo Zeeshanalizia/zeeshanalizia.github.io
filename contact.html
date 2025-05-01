@@ -178,8 +178,14 @@
         </div>
       </div>
 
- <!-- Redirect to custom thank you page -->
-  <input type="hidden" name="_redirect" value="https://zeeshanalizia.github.io/thank-you.html">
+<script>
+  document.querySelector("form").addEventListener("submit", function () {
+    setTimeout(function () {
+      window.location.href = "https://zeeshanalizia.github.io/thank-you.html";
+    }, 1000); // wait 1s before redirect
+  });
+</script>
+
 
       <div class="col-md-12">
         <div class="form-group mb-0">
